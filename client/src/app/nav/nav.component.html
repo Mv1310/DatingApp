@@ -21,8 +21,9 @@
             <a class="nav-link " routerLink="/errors" routerLinkActive="active">TestError</a>
           </li>
         </ul>
-        <div class="dropdown d-flex ms-auto" *ngIf="(accountService.currentUser$| async) as user"  dropdown>
-            <a class="text-light text-decoration-none dropdown-toggle" dropdownToggle >
+        <div class="dropdown d-flex align-items-center ms-auto" *ngIf="(accountService.currentUser$| async) as user"  dropdown>
+          <img src="{{user.photoUrl || './assets/user.png'}}" alt="user photo" >
+            <a class="text-light text-decoration-none dropdown-toggle ms-2" dropdownToggle >
                 Welcome {{user.username | titlecase}}
             </a>
             <div class="dropdown-menu" *dropdownMenu style="min-width: fit-content;">

@@ -50,15 +50,14 @@
                     <h4 class="mt-2">Location Details: </h4>
                     <div class="d-flex flex-row align-items-center">
                         <label for="city">City: </label>
-                        <input [(ngModel)]="member.city" type="text" name="city" class="form-control mx-2">
-                        <label for="city">Country: </label>
-                        <input [(ngModel)]="member.country" type="text" name="country" class="form-control mx-2">
+                        <input [(ngModel)]="member.city" type="text" name="city" id="city" class="form-control mx-2">
+                        <label for="country">Country: </label>
+                        <input [(ngModel)]="member.country" type="text" name="country" id="country" class="form-control mx-2">
                     </div>
                 </form>
             </tab>
             <tab heading="Edit Photos">
-                <P>Photo edit will go here</P>
-                <!-- <app-photo-editor [member]="member"></app-photo-editor> -->
+                <app-photo-editor [member]="member"></app-photo-editor>
             </tab>
         </tabset>
     </div>

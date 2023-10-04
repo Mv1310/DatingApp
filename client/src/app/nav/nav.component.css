@@ -1,3 +1,9 @@
 a.dropdown-toggle:hover{
     cursor: pointer;
 }
+img {
+    border-radius: 20px;
+    max-height: 40px;
+    border: 2px solid white;
+    display: inline;
+}
