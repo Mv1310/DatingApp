@@ -24,7 +24,7 @@
         <div class="dropdown d-flex align-items-center ms-auto" *ngIf="(accountService.currentUser$| async) as user"  dropdown>
           <img src="{{user.photoUrl || './assets/user.png'}}" alt="user photo" >
             <a class="text-light text-decoration-none dropdown-toggle ms-2" dropdownToggle >
-                Welcome {{user.username | titlecase}}
+                Welcome {{user.knownAs}}
             </a>
             <div class="dropdown-menu" *dropdownMenu style="min-width: fit-content;">
                 <a class="dropdown-item" routerLink="/member/edit">Edit Profile</a>
