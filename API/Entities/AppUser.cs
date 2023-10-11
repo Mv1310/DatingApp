@@ -21,10 +21,8 @@ namespace API.Entities{
         public DateTime CreatedOn {get; set;} = DateTime.UtcNow;
         public DateTime LastActive {get; set;} = DateTime.UtcNow;
 
-        // public int GetAge()
-        // {
-        //     return DateOfBirth.CalculateAge();
-        // }
+        public List<UserLike> LikedByUsers { get; set; }
+        public List<UserLike> LikedUsers { get; set; }
     }
 }
 
