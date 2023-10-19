@@ -1,0 +1,8 @@
+.btn-info, .btn-info:focus{
+    background-color: #5f9ea0;
+    border-color: #5f9ea0;
+}
+.btn-info:hover, .btn-info:active{
+    background-color: #358385;
+    border-color: #358385;
+}

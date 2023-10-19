@@ -14,7 +14,7 @@ namespace API.DTOs
         [Required] 
         public string Gender { get; set; }
         [Required] 
-        public DateOnly? DateOfBirth { get; set; } // Note this must be optional or the required validator will not work
+        public DateTime? DateOfBirth { get; set; } // Note this must be optional or the required validator will not work
         [Required] 
         public string City { get; set; }
         [Required] 

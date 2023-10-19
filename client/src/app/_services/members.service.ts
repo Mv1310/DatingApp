@@ -34,14 +34,14 @@ export class MembersService {
     return this.userParams;
   }
 
-  setUserParams(userParams: UserParams) {
-    this.userParams = userParams;
+  setUserParams(params: UserParams) {
+    this.userParams = params;
   }
 
   resetUserParams() {
     if (this.user) {
       this.userParams = new UserParams(this.user);
-      return this.userParams;
+      return this.userParams; 
     }
     return;
   }
